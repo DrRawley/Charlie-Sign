@@ -122,7 +122,7 @@ void randomLights(byte potValue)
     firstTime = false;
     for (int dot = 0; dot < NUM_LEDS; dot++)
     {
-      byte hue = hue = (byte)random(256);
+      byte hue = (byte)random(256);
 
       leds[dot] = CHSV(hue, 0xff, 128);
       FastLED.show();
