@@ -125,8 +125,8 @@ void randomLights(byte potValue)
       byte hue = (byte)random(256);
 
       leds[dot] = CHSV(hue, 0xff, 128);
-      FastLED.show();
     }
+    FastLED.show();
     timer = millis();
   }
 }
